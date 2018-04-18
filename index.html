@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>reading time</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h3 class="text-muted">Reading Time</h3>
+    </div>
+    <form>
+      <div class="form-group">
+        <div class="alert alert-primary" role="alert">
+          <span id="result">Please
+            <b>enter/paste</b> your text to estimate the reading time.</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="textarea">Your Text:</label>
+        <textarea class="form-control" id="textarea" rows="6"></textarea>
+      </div>
+      <div class="form-group text-center">
+        <button type="button" class="btn btn-primary" onclick="calcReadingTime()">Estimate Reading Time</button>
+        <button type="button" class="btn btn-secondary" onclick="resetForm()">Clear</button>
+      </div>
+    </form>
+
+    <div class="footer text-center">
+      <p>Made with
+        <span class="heart">♥</span> by
+        <a href='https://twitter.com/aferreira44'>André Ferreira</a>.</p>
+    </div>
+  </div>
+
+  <!-- <script>
+    (function (b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] || (b[l] =
+        function () {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+      b[l].l = +new Date;
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
+      e.src = 'https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+  </script> -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
