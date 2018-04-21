@@ -5,12 +5,14 @@
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>reading time</title>
+  <title>Reading Time Tool - AndreFerreira.me</title>
+  <meta name="description" content="Calculate the estimated time of a sample text based on the average reading speed.">
 
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link href="favicon.ico" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.css">
   <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-    crossorigin="anonymous">
 </head>
 
 <body>
@@ -21,8 +23,7 @@
     <form>
       <div class="form-group">
         <div class="alert alert-primary" role="alert">
-          <span id="result">Please
-            <b>enter/paste</b> your text to estimate the reading time.</span>
+          <span id="result">Please <b>enter/paste</b> your text</span>
         </div>
       </div>
       <div class="form-group">
@@ -30,19 +31,18 @@
         <textarea class="form-control" id="textarea" rows="6"></textarea>
       </div>
       <div class="form-group text-center">
-        <button type="button" class="btn btn-primary" onclick="calcReadingTime()">Estimate Reading Time</button>
-        <button type="button" class="btn btn-secondary" onclick="resetForm()">Clear</button>
+        <button type="button" class="btn btn-primary" onclick="calcReadingTime()"><i class="fas fa-calculator"></i> Estimate Reading Time</button>
+        <button type="button" class="btn btn-secondary" onclick="resetForm()"><i class="fas fa-times"></i> Clear</button>
       </div>
     </form>
 
-    <div class="footer text-center">
-      <p>Made with
-        <span class="heart">♥</span> by
-        <a href='https://twitter.com/aferreira44'>André Ferreira</a>.</p>
+    <div class="text-center">
+      <p><strong>Reading Time Tool</strong> by <a href='https://twitter.com/aferreira44'><i class="fab fa-twitter"></i> aferreira44</a></p>
+      <p><a href="https://github.com/aferreira44/reading-time"><i class="fab fa-github"></i> Fork me on GitHub</a></p>
     </div>
   </div>
 
-  <!-- <script>
+  <script>
     (function (b, o, i, l, e, r) {
       b.GoogleAnalyticsObject = l;
       b[l] || (b[l] =
@@ -57,7 +57,7 @@
     }(window, document, 'script', 'ga'));
     ga('create', 'UA-XXXXX-X');
     ga('send', 'pageview');
-  </script> -->
+  </script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
